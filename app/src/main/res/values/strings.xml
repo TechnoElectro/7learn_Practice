@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">7Learn Android Expert</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="press_me_let_s_go">Press Me</string>
+    <string name="_7learn_android_expert">Android Expert Course</string>
+    <string name="_7learn">7Learn</string>
+    <string name="hello_this_is_test">Hello this is test</string>
+    <string name="get_10_th_char">Get 10\'th Char From Data Recieved</string>
+    <string name="get_list_of_multiple_10_char">Get List of Multiple 10 Char</string>
+    <string name="display_repeated_words">Display Repeated Words</string>
+    <string name="lets_go">Let\'s Go</string>
+    <string name="version">About</string>
+    <string name="press_twice_to_finish">Please click BACK again to exit</string>
+</resources>

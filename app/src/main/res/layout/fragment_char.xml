@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:id="@+id/box_char_top"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:background="@drawable/shape_char">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/av_char_done"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/tick"
+            app:lottie_repeatMode="reverse" />
+
+        <TextView
+            android:id="@+id/tv_char_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/av_char_done"
+            android:text="@string/get_10_th_char"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/box_char_top"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:background="@drawable/shape">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/av_char_search"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/search"
+            />
+        <View
+            android:id="@+id/view_char_background"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:background="@drawable/char_bg"
+            />
+
+        <TextView
+            android:id="@+id/tv_char_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            tools:text="A" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

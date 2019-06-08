@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تمرین اندروید</string>
+    <string name="press_me_let_s_go">کلیک کنید</string>
+    <string name="_7learn_android_expert">دوره متخصص اندروید</string>
+    <string name="_7learn">سون لرن</string>
+    <string name="hello_blank_fragment">متن آزمایشی</string>
+    <string name="hello_this_is_test">این یک متن نمایشی است</string>
+    <string name="display_repeated_words">نمایش تکرار کلمات</string>
+    <string name="get_10_th_char">نمایش کاراکتر دهم دریافتی</string>
+    <string name="get_list_of_multiple_10_char">نمایش لیست کاراکتر های مضرب ده</string>
+    <string name="lets_go">بزن بریم</string>
+    <string name="version">درباره ما</string>
+    <string name="press_twice_to_finish">برای خروج دوباره دکمه برگشت را بزنید</string>
+</resources>

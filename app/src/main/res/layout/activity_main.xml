@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+<FrameLayout
+    android:layout_margin="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="115dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_main"
+        android:id="@+id/iv_main_logo"
+
+        />
+    <TextView
+        android:layout_below="@id/iv_main_logo"
+        android:id="@+id/tv_main_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_version"
+        android:text="@string/version"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:textSize="13sp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal|bottom"
+        />
+</FrameLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/av_main_rocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rl_main_purple"
+        android:adjustViewBounds="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/rocket_purple"
+        app:lottie_repeatMode="reverse" />
+
+    <RelativeLayout
+        android:id="@+id/rl_main_purple"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/riple"
+        android:onClick="press_me">
+
+        <TextView
+            android:id="@+id/tv_main_press"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center"
+            android:text="@string/press_me_let_s_go"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

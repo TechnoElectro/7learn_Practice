@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_itemCount_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_counter_item_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="60dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="hello" />
+
+    <TextView
+        android:id="@+id/tv_counter_item_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#919191"
+        android:textSize="28sp"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/tv_counter_item_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_counter_item_word"
+        android:layout_alignLeft="@id/tv_counter_item_word"
+        tools:text="this is test text" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tv_counter_item_desc"
+        android:background="#FFF5F5F5" />
+
+</RelativeLayout>

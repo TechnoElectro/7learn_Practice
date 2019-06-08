@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8"
+    tools:context=".ui.NetworkCallActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/shape2"
+        android:gravity="center_horizontal|top"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="top">
+
+            <ImageView
+                android:id="@+id/iv_network_logo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/tv_network_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/iv_network_logo"
+                android:text="@string/_7learn"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_network_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_network_brand"
+                android:layout_toEndOf="@id/iv_network_logo"
+                android:layout_marginTop="4dp"
+                android:text="@string/_7learn_android_expert"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_network_request"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+ />
+</FrameLayout>
