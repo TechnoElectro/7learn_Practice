@@ -6,32 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-<FrameLayout
-    android:layout_margin="8dp"
-    android:layout_width="wrap_content"
-    android:layout_height="115dp">
+        <TextView
+            android:id="@+id/tv_main_version"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/shape_version"
+            android:text="@string/version"
+            android:textAlignment="center"
+            android:onClick="about"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
 
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/logo_main"
-        android:id="@+id/iv_main_logo"
-
-        />
-    <TextView
-        android:layout_below="@id/iv_main_logo"
-        android:id="@+id/tv_main_version"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/shape_version"
-        android:text="@string/version"
-        android:layout_marginBottom="8dp"
-        android:elevation="4dp"
-        android:textSize="13sp"
-        android:textColor="@android:color/white"
-        android:layout_gravity="center_horizontal|bottom"
-        />
-</FrameLayout>
 
 
     <com.airbnb.lottie.LottieAnimationView

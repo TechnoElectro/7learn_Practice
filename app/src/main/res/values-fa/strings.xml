@@ -10,6 +10,8 @@
     <string name="get_10_th_char">نمایش کاراکتر دهم دریافتی</string>
     <string name="get_list_of_multiple_10_char">نمایش لیست کاراکتر های مضرب ده</string>
     <string name="lets_go">بزن بریم</string>
-    <string name="version">درباره ما</string>
+    <string name="version">!</string>
     <string name="press_twice_to_finish">برای خروج دوباره دکمه برگشت را بزنید</string>
+    <string name="version_text">تمرین پایان ترم دوره اندروید\nتوسعه دهنده : امیرحسین ساقی\nنسخه: 1.0\nایمیل: A.H.Saghi@gmail.com</string>
+    <string name="about_me">درباره من</string>
 </resources>

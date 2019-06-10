@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup,android:icon">
         <activity android:name=".ui.NetworkCallActivity" />
         <activity android:name=".ui.MainActivity"
             android:noHistory="true">
