@@ -16,7 +16,7 @@ private static FontGuid fontGuid_instance = null;
         return  fontGuid_instance;
     }
 
-    public FontGuid(Context context) {
+    private FontGuid(Context context) {
         mEnglish = Typeface.createFromAsset(context.getAssets(), "fonts/english_bold.ttf");
         mFarsi = Typeface.createFromAsset(context.getAssets(), "fonts/farsi_bold.ttf");
     }

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.model.WordCount;
+import com.example.myapplication.utils.ColorHelper;
 
 import java.util.HashMap;
 import java.util.List;
@@ -22,11 +23,6 @@ import butterknife.ButterKnife;
 
 public class WordsCountAdapter extends RecyclerView.Adapter<WordsCountAdapter.RecyclerViewHolder> {
     private List<WordCount> wordCounts;
-
-
-    public WordsCountAdapter() {
-
-    }
 
     @NonNull
     @Override
@@ -44,54 +40,8 @@ public class WordsCountAdapter extends RecyclerView.Adapter<WordsCountAdapter.Re
             holder.count.setText(String.valueOf(wordCounts.get(position).getCount()));
 
             holder.desc.setText("this word repeated " + wordCounts.get(position).getCount() + " times");
-            switch (wordCounts.get(position).getCount()) {
-                case 0:
-                    holder.layout_background.setBackgroundColor(Color.rgb(160, 232, 252));
-                    break;
-                case 1:
-                    holder.layout_background.setBackgroundColor(Color.rgb(160, 252, 238));
-                    break;
-                case 2:
-                    holder.layout_background.setBackgroundColor(Color.rgb(160, 252, 197));
-                    break;
-                case 3:
-                    holder.layout_background.setBackgroundColor(Color.rgb(160, 252, 188));
-                    break;
-                case 4:
-                    holder.layout_background.setBackgroundColor(Color.rgb(160, 252, 176));
-                    break;
-                case 5:
-                    holder.layout_background.setBackgroundColor(Color.rgb(160, 252, 167));
-                    break;
-                case 6:
-                    holder.layout_background.setBackgroundColor(Color.rgb(179, 252, 160));
-                    break;
-                case 7:
-                    holder.layout_background.setBackgroundColor(Color.rgb(199, 253, 159));
-                    break;
-                case 8:
-                    holder.layout_background.setBackgroundColor(Color.rgb(222, 253, 159));
-                    break;
-                case 9:
-                    holder.layout_background.setBackgroundColor(Color.rgb(241, 253, 159));
-                    break;
-                case 10:
-                    holder.layout_background.setBackgroundColor(Color.rgb(253, 241, 159));
-                    break;
-                case 11:
-                    holder.layout_background.setBackgroundColor(Color.rgb(254, 225, 158));
-                    break;
-                case 12:
-                    holder.layout_background.setBackgroundColor(Color.rgb(254, 208, 158));
-                    break;
-                case 13:
-                    holder.layout_background.setBackgroundColor(Color.rgb(254, 187, 158));
-                    break;
-                default:
-                    holder.layout_background.setBackgroundColor(Color.rgb(254, 158, 158));
-                    break;
 
-            }
+            holder.layout_background.setBackgroundColor(ColorHelper.getColor(wordCounts.get(position).getCount()));
         }
     }
 

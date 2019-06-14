@@ -25,7 +25,7 @@
             android:adjustViewBounds="true"
             android:layout_margin="8dp"
             android:layout_alignParentStart="true"
-            app:lottie_autoPlay="true"
+            app:lottie_autoPlay="false"
             app:lottie_loop="false"
             app:lottie_rawRes="@raw/tick"
             app:lottie_repeatMode="reverse" />

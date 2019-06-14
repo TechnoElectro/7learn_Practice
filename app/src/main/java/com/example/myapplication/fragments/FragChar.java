@@ -32,7 +32,6 @@ public class FragChar extends Fragment {
     @BindView(R.id.av_char_search)
     LottieAnimationView search_animation;
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

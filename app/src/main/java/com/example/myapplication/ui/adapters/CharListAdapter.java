@@ -19,10 +19,6 @@ public class CharListAdapter extends RecyclerView.Adapter<CharListAdapter.Recycl
 
     private static char[] characters;
 
-    public CharListAdapter() {
-
-    }
-
     public void setCharList(char[] characterList) {
         characters = characterList;
         notifyDataSetChanged();

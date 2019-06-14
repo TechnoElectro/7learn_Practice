@@ -7,18 +7,12 @@ import java.util.List;
 
 public class TextHelper {
 
-
-
-    public TextHelper() {
-
-    }
-
     public Character getCharAtPosition(String text) {
         return text.charAt(9);
     }
 
     public char[] getMultipleOf(String text){
-       int charCount = text.length()/10;
+       int charCount = text.length()/10; // max size of array
         char[] chars = new char[charCount];
         int j = 0;
         for (int i = 9; i < text.length(); i = i + 10) {
@@ -45,17 +39,14 @@ public class TextHelper {
                     words[j] = "0";
                 }
             }
-            //Displays the duplicate word if count is greater than 1
+            //Displays the duplicate word
             if (repeatedWords >= 1 && words[i] != "0") {
                 WordCount wordCount = new WordCount(words[i],repeatedWords);
                 wordCountList.add(wordCount);
             }
         }
 
-
         return wordCountList;
     }
-
-
 
 }

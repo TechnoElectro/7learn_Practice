@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.tv_main_version)
     TextView tv_about;
 
-
     private Boolean flag = false;
 
     @Override
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initViews();
         lottieInit();
-
     }
 
     private void initViews() {
@@ -76,18 +74,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void about(View view) {
         NiftyDialogBuilder dialogBuilder=NiftyDialogBuilder.getInstance(this);
-
         dialogBuilder
-                .withTitle(getString(R.string.about_me))                                  //.withTitle(null)  no title
-                .withTitleColor("#FFFFFF")                                  //def
-                .withDividerColor("#880E4F")                              //def
-                .withMessage(R.string.version_text)                     //.withMessage(null)  no Msg
-                .withMessageColor("#ffffff")                                //def  | withMessageColor(int resid)
-                .withDialogColor("#880E4F")                                 //def  | withDialogColor(int resid)
+                .withTitle(getString(R.string.about_me))
+                .withTitleColor("#FFFFFF")
+                .withDividerColor("#880E4F")
+                .withMessage(R.string.version_text)
+                .withMessageColor("#ffffff")
+                .withDialogColor("#880E4F")
                 .withIcon(getResources().getDrawable(R.drawable.logo))
-                .withDuration(700)                                          //def
-                .withEffect(Effectstype.Slidetop)                          //def Effectstype.Slidetop
-                .isCancelableOnTouchOutside(true)                           //def  | isCancelable(true)
+                .withDuration(700)
+                .withEffect(Effectstype.Slidetop)
+                .isCancelableOnTouchOutside(true)
                 .show();
     }
 }

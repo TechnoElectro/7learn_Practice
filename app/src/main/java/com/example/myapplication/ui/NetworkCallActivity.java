@@ -55,11 +55,6 @@ public class NetworkCallActivity extends AppCompatActivity implements NetworkCal
         viewPager.setPadding(80, 0, 80, 0);
         viewPager.setPageMargin(8);
         viewPager.setAdapter(mViewPagerAdapter);
-//        AlphaAnimation alphaAnimation = new AlphaAnimation(1f, 0.5f);
-//        alphaAnimation.setDuration(700);
-//        alphaAnimation.setRepeatCount(AlphaAnimation.INFINITE);
-//        alphaAnimation.setRepeatMode(AlphaAnimation.REVERSE);
-//        logo.startAnimation(alphaAnimation);
     }
 
     @Override
@@ -96,7 +91,6 @@ public class NetworkCallActivity extends AppCompatActivity implements NetworkCal
     @Override
     public void MultipleCharAt10CallBack(char[] characterList) {
         mViewPagerAdapter.setCharList(characterList);
-
     }
 
     @Override
