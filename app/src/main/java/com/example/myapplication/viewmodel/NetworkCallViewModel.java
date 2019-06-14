@@ -16,14 +16,14 @@ public class NetworkCallViewModel {
     public NetworkCallViewModel(Context context) {
         apiService = new ApiService(context);
         uiCallBack = (UiCallBack) context;
-        textHelper = new TextHelper();
+
     }
 
     public void getCharAt10Position() {
         apiService.GetTextFromApi(new ApiService.OnResponseReceived() {
             @Override
             public void onRecipesReceived(String text) {
-                uiCallBack.charAtPosition10CallBack(textHelper.getCharAtPosition(text));
+                uiCallBack.charAtPosition10CallBack(TextHelper.getCharAtPosition(text));
             }
 
             @Override
@@ -37,7 +37,7 @@ public class NetworkCallViewModel {
         apiService.GetTextFromApi(new ApiService.OnResponseReceived() {
             @Override
             public void onRecipesReceived(String text) {
-                uiCallBack.MultipleCharAt10CallBack(textHelper.getMultipleOf(text));
+                uiCallBack.MultipleCharAt10CallBack(TextHelper.getMultipleOf(text));
             }
 
             @Override
@@ -51,7 +51,7 @@ public class NetworkCallViewModel {
         apiService.GetTextFromApi(new ApiService.OnResponseReceived() {
             @Override
             public void onRecipesReceived(String text) {
-                uiCallBack.getWordsCountCallBack(textHelper.getWordCount(text));
+                uiCallBack.getWordsCountCallBack(TextHelper.getWordCount(text));
             }
 
             @Override

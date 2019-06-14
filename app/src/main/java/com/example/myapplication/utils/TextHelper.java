@@ -7,11 +7,11 @@ import java.util.List;
 
 public class TextHelper {
 
-    public Character getCharAtPosition(String text) {
+    public static Character getCharAtPosition(String text) {
         return text.charAt(9);
     }
 
-    public char[] getMultipleOf(String text){
+    public static char[] getMultipleOf(String text){
        int charCount = text.length()/10; // max size of array
         char[] chars = new char[charCount];
         int j = 0;
@@ -21,7 +21,7 @@ public class TextHelper {
         return chars;
     }
 
-    public List<WordCount> getWordCount(String text) {
+    public static List<WordCount> getWordCount(String text) {
         int repeatedWords;
 
         //Converts the string into lowercase
